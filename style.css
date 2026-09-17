@@ -1,0 +1,346 @@
+/* ===========================
+   PORTAFOLIO PROFESIONAL SENCE
+   Cristian Andrés Contreras Ortiz
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+    line-height:1.7;
+}
+
+/* ===== NAVBAR ===== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+    background:#0f172a;
+    box-shadow:0 2px 15px rgba(0,0,0,.15);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:700;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:22px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#38bdf8;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    min-height:100vh;
+    padding:120px 10%;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:white;
+}
+
+.hero-texto{
+    max-width:600px;
+}
+
+.saludo{
+    color:#93c5fd;
+    font-size:20px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin:10px 0;
+}
+
+.hero h2{
+    color:#bfdbfe;
+    margin-bottom:20px;
+}
+
+.hero p{
+    margin-bottom:25px;
+}
+
+.hero-img img{
+    width:340px;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
+}
+
+/* ===== BOTONES ===== */
+
+.botones{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.azul{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+.azul:hover{
+    background:#0ea5e9;
+    transform:translateY(-4px);
+}
+
+.blanco{
+    background:white;
+    color:#2563eb;
+}
+
+.blanco:hover{
+    transform:translateY(-4px);
+}
+
+/* ===== SECCIONES ===== */
+
+.seccion{
+    padding:90px 10%;
+}
+
+.seccion h2{
+    text-align:center;
+    color:#1d4ed8;
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+.fondo-claro{
+    background:#eef4ff;
+}
+
+.fondo-azul{
+    background:#2563eb;
+    color:white;
+}
+
+.fondo-azul h2,
+.fondo-azul h3{
+    color:white;
+}
+
+/* ===== HABILIDADES ===== */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+
+.skills span{
+    background:white;
+    padding:15px 25px;
+    border-radius:40px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    font-weight:600;
+    transition:.3s;
+}
+
+.skills span:hover{
+    transform:translateY(-5px);
+    background:#2563eb;
+    color:white;
+}
+
+.skills i{
+    margin-right:8px;
+    color:#2563eb;
+}
+
+/* ===== MICROSOFT ===== */
+
+.cards-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+
+.card-info{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card-info:hover{
+    transform:translateY(-10px);
+}
+
+.card-info i{
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+/* ===== PROYECTOS ===== */
+
+.proyectos-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.proyecto{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.proyecto:hover{
+    transform:translateY(-8px);
+}
+
+.proyecto img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.proyecto h3{
+    color:#2563eb;
+    padding:20px;
+}
+
+.proyecto p{
+    padding:0 20px 20px;
+}
+
+.proyecto .btn{
+    display:block;
+    text-align:center;
+    margin:20px;
+}
+
+/* ===== FODA ===== */
+
+.foda-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.foda-grid div{
+    padding:25px;
+    border-radius:20px;
+    color:#111827;
+}
+
+.fortaleza{
+    background:#dcfce7;
+}
+
+.debilidad{
+    background:#fef3c7;
+}
+
+.oportunidad{
+    background:#dbeafe;
+}
+
+.amenaza{
+    background:#fee2e2;
+}
+
+.foda-grid h3{
+    margin-bottom:15px;
+}
+
+.foda-grid ul{
+    padding-left:20px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+footer i{
+    color:#38bdf8;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero-img img{
+    width:230px;
+    margin-bottom:30px;
+}
+
+.menu{
+    display:none;
+}
+
+.skills span{
+    width:100%;
+    text-align:center;
+}
+
+}
