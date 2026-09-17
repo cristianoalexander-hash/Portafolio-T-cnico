@@ -1,330 +1,276 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Técnico | Cristian Andrés Contreras Ortiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <title>Portafolio | Cristian Andrés Contreras Ortiz</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/estilo.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="hero">
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Cristian Contreras</div>
 
-        <div class="hero-content">
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#microsoft">Microsoft</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#caso">Caso de Estudio</a></li>
+      <li><a href="#foda">FODA</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
-            <h1>Cristian Andrés Contreras Ortiz</h1>
+<!-- ===== HERO ===== -->
+<section id="inicio" class="hero">
 
-            <h3>Desarrollador Full Stack Java Trainee</h3>
+  <div class="hero-texto">
 
-            <p>Proyecto Integrador SENCE / Alkemy</p>
+    <p class="saludo">Hola, soy</p>
 
-        </div>
+    <h1>Cristian Andrés Contreras Ortiz</h1>
 
-    </header>
+    <h2>Desarrollador Full Stack Java Trainee</h2>
 
-    <!-- MENÚ -->
-    <nav>
+    <p>
+      Estudiante del programa Desarrollo de Aplicaciones Full Stack Java Trainee de
+      SENCE y Alkemy. Me apasiona crear aplicaciones web modernas utilizando Java,
+      Spring Boot, HTML, CSS, JavaScript y MySQL.
+    </p>
 
-        <a href="#sobre">Sobre mí</a>
-        <a href="#portfolio">Portafolio</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#caso">Caso de estudio</a>
-        <a href="#foda">FODA</a>
-        <a href="#contacto">Contacto</a>
+    <div class="botones">
 
-    </nav>
+      <a href="#proyectos" class="btn azul">
+        Ver Proyectos
+      </a>
 
-    <!-- SOBRE MÍ -->
-    <section id="sobre" class="contenedor">
+      <a href="https://github.com/cristianoalexander-hash" target="_blank" class="btn blanco">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
 
-        <h2>👨‍💻 Sobre mí</h2>
+    </div>
 
-        <p>
-            Soy estudiante del programa <strong>Desarrollo de Aplicaciones Full Stack Java Trainee</strong> de
-            SENCE / Alkemy. Durante este curso desarrollé aplicaciones Frontend y Backend utilizando HTML, CSS,
-            JavaScript, Java, JSP, MySQL, Spring Boot y GitHub, fortaleciendo mis habilidades técnicas y de
-            resolución de problemas.
-        </p>
+  </div>
 
-        <h3>Tecnologías que manejo</h3>
+  <div class="hero-img">
 
-        <div class="tecnologias">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>Bootstrap</span>
-            <span>jQuery</span>
-            <span>Java</span>
-            <span>JSP</span>
-            <span>Servlets</span>
-            <span>MySQL</span>
-            <span>Spring Boot</span>
-            <span>Git</span>
-            <span>GitHub</span>
-        </div>
+    <img src="assets/img/perfil.png" alt="Cristian Contreras">
 
-    </section>
+  </div>
 
-    <!-- PORTAFOLIO -->
-    <section id="portfolio" class="contenedor">
+</section>
 
-        <h2>📁 Mi Portafolio Técnico</h2>
+<!-- ===== SOBRE MI ===== -->
+<section id="sobre-mi" class="seccion">
 
-        <p>
-            Este portafolio reúne los principales proyectos desarrollados durante el curso
-            <strong>Desarrollo de Aplicaciones Full Stack Java Trainee</strong>. Cada proyecto representa una etapa
-            importante de mi aprendizaje y demuestra el uso de distintas tecnologías para desarrollar soluciones web.
-        </p>
+  <h2>Sobre mí</h2>
 
-        <ul>
-            <li>💳 Alke Wallet – Desarrollo Frontend.</li>
-            <li>📚 Biblioteca Digital UNTEC – Java EE y MySQL.</li>
-            <li>🎓 SpringEduManager – Spring Boot y API REST.</li>
-        </ul>
+  <p>
+    Soy estudiante del programa Desarrollo de Aplicaciones Full Stack Java Trainee
+    de SENCE y Alkemy. Durante este proceso desarrollé aplicaciones Frontend y Backend
+    utilizando HTML, CSS, JavaScript, Java, JSP, Spring Boot y MySQL.
+  </p>
 
-    </section>
+  <p>
+    Mi objetivo es continuar creciendo profesionalmente como desarrollador Full Stack,
+    aprendiendo nuevas tecnologías y participando en proyectos de innovación tecnológica.
+  </p>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="contenedor">
+</section>
 
-        <h2>🚀 Mis Proyectos</h2>
+<!-- ===== HABILIDADES ===== -->
+<section class="seccion habilidades">
 
-        <!-- Proyecto 1 -->
-        <div class="card">
+  <h2>Habilidades Técnicas</h2>
 
-            <h3>💳 Alke Wallet (Módulo 2)</h3>
+  <div class="skills">
 
-            <p><strong>Descripción</strong></p>
+    <span><i class="fab fa-html5"></i> HTML5</span>
+    <span><i class="fab fa-css3-alt"></i> CSS3</span>
+    <span><i class="fab fa-js-square"></i> JavaScript</span>
+    <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+    <span><i class="fab fa-java"></i> Java</span>
+    <span><i class="fas fa-leaf"></i> Spring Boot</span>
+    <span><i class="fas fa-database"></i> MySQL</span>
+    <span><i class="fab fa-git-alt"></i> Git</span>
+    <span><i class="fab fa-github"></i> GitHub</span>
+    <span><i class="fas fa-server"></i> Apache Tomcat</span>
 
-            <p>
-                Aplicación Frontend que simula una billetera digital. Permite iniciar sesión, visualizar el saldo,
-                realizar depósitos, enviar dinero y consultar el historial de transacciones.
-            </p>
+  </div>
 
-            <p><strong>Tecnologías utilizadas</strong></p>
+</section>
 
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-                <li>jQuery</li>
-            </ul>
+<!-- ===== MICROSOFT ===== -->
+<section id="microsoft" class="seccion fondo-claro">
 
-            <p><strong>Aprendizajes</strong></p>
+  <h2>Investigación de Microsoft</h2>
+
+  <div class="cards-info">
 
-            <p>
-                Aprendí a desarrollar interfaces dinámicas, validar formularios, manipular el DOM y crear una
-                aplicación responsiva utilizando Bootstrap y JavaScript.
-            </p>
+    <div class="card-info">
+      <i class="fas fa-building"></i>
+      <h3>Empresa</h3>
+      <p>Microsoft es líder mundial en tecnología e innovación.</p>
+    </div>
+
+    <div class="card-info">
+      <i class="fas fa-heart"></i>
+      <h3>Valores</h3>
+      <p>Innovación, inclusión, aprendizaje continuo y colaboración.</p>
+    </div>
+
+    <div class="card-info">
+      <i class="fas fa-cloud"></i>
+      <h3>Tecnologías</h3>
+      <p>Azure, GitHub, Copilot, Inteligencia Artificial, Java y SQL.</p>
+    </div>
+
+    <div class="card-info">
+      <i class="fas fa-users"></i>
+      <h3>Metodologías</h3>
+      <p>Scrum, DevOps y trabajo colaborativo.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== PROYECTOS ===== -->
+<section id="proyectos" class="seccion">
+
+  <h2>Mis Proyectos</h2>
+
+  <div class="proyectos-grid">
+
+    <div class="proyecto">
+      <img src="assets/img/joko-wallet.jpg" alt="JOKO Wallet">
+      <h3>Billetera JOKO</h3>
+      <p>Aplicación Frontend que simula una billetera digital.</p>
+      <a href="https://cristianoalexander-hash.github.io/Billetera-JOKO/" target="_blank" class="btn azul">Ver Proyecto</a>
+    </div>
+
+    <div class="proyecto">
+      <img src="assets/img/biblioteca.jpg" alt="Biblioteca UNTEC">
+      <h3>Biblioteca Digital UNTEC</h3>
+      <p>Aplicación Java EE con JSP, Servlets y MySQL.</p>
+      <a href="https://github.com/cristianoalexander-hash/Biblioteca-Digital-UNTEC" target="_blank" class="btn azul">Repositorio GitHub</a>
+    </div>
 
-            <a class="boton" href="#" target="_blank">
-                Ver proyecto en GitHub
-            </a>
+    <div class="proyecto">
+      <img src="assets/img/spring.jpg" alt="SpringEduManager">
+      <h3>SpringEduManager</h3>
+      <p>Aplicación Spring Boot para gestión de estudiantes.</p>
+      <a href="https://github.com/cristianoalexander-hash/SpringEduManager" target="_blank" class="btn azul">Repositorio GitHub</a>
+    </div>
 
-        </div>
+  </div>
 
-        <!-- Proyecto 2 -->
-        <div class="card">
+</section>
 
-            <h3>📚 Biblioteca Digital UNTEC (Módulo 5)</h3>
+<!-- ===== CASO DE ESTUDIO ===== -->
+<section id="caso" class="seccion fondo-azul">
 
-            <p><strong>Descripción</strong></p>
+  <h2>Caso de Estudio</h2>
 
-            <p>
-                Aplicación web desarrollada con Java EE para gestionar libros, usuarios, préstamos y devoluciones
-                utilizando el patrón MVC y conexión a MySQL mediante JDBC.
-            </p>
+  <h3>Biblioteca Digital UNTEC</h3>
 
-            <p><strong>Tecnologías utilizadas</strong></p>
+  <p>
+    Fue el proyecto más desafiante del curso porque integró Java EE, JSP,
+    Servlets, JDBC, MySQL y el patrón MVC.
+  </p>
 
-            <ul>
-                <li>Java EE</li>
-                <li>JSP</li>
-                <li>Servlets</li>
-                <li>JDBC</li>
-                <li>MySQL</li>
-                <li>Apache Tomcat</li>
-                <li>JSTL</li>
-                <li>MVC</li>
-            </ul>
+  <ul>
+    <li>Implementación de CRUD.</li>
+    <li>Conexión con MySQL usando JDBC.</li>
+    <li>Arquitectura MVC.</li>
+    <li>Uso del patrón DAO.</li>
+    <li>Configuración de Eclipse y Apache Tomcat.</li>
+  </ul>
 
-            <p><strong>Aprendizajes</strong></p>
+</section>
 
-            <p>
-                Implementé operaciones CRUD, gestión de sesiones, arquitectura MVC y conexión segura a bases de
-                datos utilizando PreparedStatement.
-            </p>
+<!-- ===== FODA ===== -->
+<section id="foda" class="seccion">
 
-            <a class="boton" href="#" target="_blank">
-                Ver proyecto en GitHub
-            </a>
+  <h2>Análisis FODA</h2>
 
-        </div>
+  <div class="foda-grid">
 
-        <!-- Proyecto 3 -->
-        <div class="card">
+    <div class="fortaleza">
+      <h3>Fortalezas</h3>
+      <ul>
+        <li>Responsable y comprometido.</li>
+        <li>Aprendizaje rápido.</li>
+        <li>Trabajo en equipo.</li>
+        <li>Conocimientos en Java, HTML, CSS y JavaScript.</li>
+      </ul>
+    </div>
 
-            <h3>🎓 SpringEduManager (Módulo 6)</h3>
+    <div class="debilidad">
+      <h3>Debilidades</h3>
+      <ul>
+        <li>Mejorar inglés técnico.</li>
+        <li>Más experiencia laboral.</li>
+        <li>Seguir fortaleciendo Git y GitHub.</li>
+      </ul>
+    </div>
 
-            <p><strong>Descripción</strong></p>
+    <div class="oportunidad">
+      <h3>Oportunidades</h3>
+      <ul>
+        <li>Crecimiento del mercado IT.</li>
+        <li>Trabajo remoto.</li>
+        <li>Certificaciones tecnológicas.</li>
+      </ul>
+    </div>
 
-            <p>
-                Plataforma educativa desarrollada con Spring Boot para administrar estudiantes, cursos y
-                evaluaciones, incorporando autenticación y servicios REST.
-            </p>
+    <div class="amenaza">
+      <h3>Amenazas</h3>
+      <ul>
+        <li>Alta competencia para cargos Junior.</li>
+        <li>Actualización constante de tecnologías.</li>
+      </ul>
+    </div>
 
-            <p><strong>Tecnologías utilizadas</strong></p>
+  </div>
 
-            <ul>
-                <li>Spring Boot</li>
-                <li>Spring MVC</li>
-                <li>Spring Data JPA</li>
-                <li>Spring Security</li>
-                <li>Maven</li>
-                <li>MySQL / H2</li>
-                <li>REST API</li>
-            </ul>
-
-            <p><strong>Aprendizajes</strong></p>
-
-            <p>
-                Aprendí a desarrollar aplicaciones modernas con Spring Boot, implementar seguridad, persistencia de
-                datos y APIs REST.
-            </p>
+</section>
 
-            <a class="boton" href="#" target="_blank">
-                Ver proyecto en GitHub
-            </a>
+<!-- ===== CONTACTO ===== -->
+<footer id="contacto">
 
-        </div>
+  <h2>Contacto</h2>
 
-    </section>
+  <p><i class="fab fa-github"></i> github.com/cristianoalexander-hash</p>
 
-    <!-- CASO DE ESTUDIO -->
-    <section id="caso" class="contenedor">
+  <p><i class="fas fa-code"></i> Desarrollo de Aplicaciones Full Stack Java Trainee</p>
 
-        <h2>📖 Caso de Estudio</h2>
+  <p>SENCE · Alkemy · 2026</p>
 
-        <h3>Biblioteca Digital UNTEC</h3>
+</footer>
 
-        <p><strong>Descripción del proyecto</strong></p>
-
-        <p>
-            Sistema web para gestionar libros, usuarios, préstamos y devoluciones en una biblioteca universitaria.
-        </p>
-
-        <p><strong>Desafío principal</strong></p>
-
-        <p>
-            Integrar Java EE, JSP, Servlets, JDBC y MySQL utilizando el patrón MVC y resolver problemas de
-            configuración en Eclipse y Apache Tomcat.
-        </p>
-
-        <p><strong>Solución implementada</strong></p>
-
-        <p>
-            Se desarrolló una arquitectura MVC con clases DAO, conexión mediante JDBC y operaciones CRUD para
-            administrar la información almacenada en MySQL.
-        </p>
-
-        <p><strong>Resultado</strong></p>
-
-        <p>
-            El proyecto permitió gestionar correctamente la información de la biblioteca y fortaleció mis
-            conocimientos en desarrollo Backend y bases de datos.
-        </p>
-
-    </section>
-
-    <!-- FODA -->
-    <section id="foda" class="contenedor">
-
-        <h2>📊 Matriz FODA</h2>
-
-        <div class="foda">
-
-            <div>
-                <h3>Fortalezas</h3>
-                <ul>
-                    <li>Responsable y comprometido.</li>
-                    <li>Aprendo rápidamente nuevas herramientas.</li>
-                    <li>Conocimientos en Java y SQL.</li>
-                    <li>Manejo HTML, CSS y JavaScript.</li>
-                    <li>Trabajo colaborativo.</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Debilidades</h3>
-                <ul>
-                    <li>Falta de experiencia laboral.</li>
-                    <li>Mejorar inglés técnico.</li>
-                    <li>Practicar Git y GitHub.</li>
-                    <li>Fortalecer Spring Boot.</li>
-                    <li>Mejorar presentaciones técnicas.</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Oportunidades</h3>
-                <ul>
-                    <li>Crecimiento del mercado IT.</li>
-                    <li>Trabajo remoto.</li>
-                    <li>Programas Trainee.</li>
-                    <li>Certificaciones tecnológicas.</li>
-                    <li>Mayor demanda de desarrolladores.</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Amenazas</h3>
-                <ul>
-                    <li>Alta competencia laboral.</li>
-                    <li>Cambios constantes en la tecnología.</li>
-                    <li>Exigencia de experiencia previa.</li>
-                    <li>Actualización permanente.</li>
-                    <li>Competencia internacional.</li>
-                </ul>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contenedor">
-
-        <h2>📬 Contacto</h2>
-
-        <p><strong>Nombre:</strong> Cristian Andrés Contreras Ortiz</p>
-
-        <p><strong>Curso:</strong> Desarrollo de Aplicaciones Full Stack Java Trainee.</p>
-
-        <p><strong>GitHub:</strong> cristianoalexander-hash</p>
-
-        <p><strong>Portafolio Web:</strong> Se publicará mediante GitHub Pages.</p>
-
-        <p>
-            Este portafolio fue desarrollado como proyecto integrador del programa SENCE / Alkemy y reúne los
-            proyectos más importantes realizados durante el curso.
-        </p>
-
-    </section>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-
-        <p>© 2026 Cristian Andrés Contreras Ortiz | Portafolio Técnico SENCE / Alkemy</p>
-
-    </footer>
-
-    <script src="script.js"></script>
-
+<script src="assets/js/script.js"></script>
 </body>
 
+    
 </html>
